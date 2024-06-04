@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import BookCard from './BookCard'
 import { ArrowLeft } from 'lucide-react'
 import { NavLink} from 'react-router-dom';
 import { mybooks } from './../../bookshelf.js';
 
 function MyBookShelf() {
+
+  const [books, setBooks] = useState(mybooks)
+
+  useEffect(() => {
+    const bookshelf = JSON.parse(localStorage.getItem("bookshelf"))
+    if(bookshelf && bookshelf.length > 0)
+      setBooks(bookshelf)
+  }, [])
+  
+  
 
   return (
     <div>
@@ -17,7 +27,7 @@ function MyBookShelf() {
       </div>
       <div className='flex flex-wrap mt-12 gap-3'>
 
-      {mybooks.map((book) => (<BookCard book={book} addVal={true}/>))}
+      {books.map((book) => (<BookCard book={book} addVal={true}/>))}
       </div>
       
     </div>
