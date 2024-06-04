@@ -30,9 +30,9 @@ Search our bookstore with real time suggestions and add them in your virtual boo
 
 ![Alt Text - Home](https://i.postimg.cc/t4DGV8Qz/Home.png)
 ![Alt Text - Search Functionality](https://i.postimg.cc/rFKrb2gD/search.png)
-![Alt Text - Adding to bookshelf](https://drive.google.com/file/d/1ZoXobnfY43MnsfGGfSYXr0l9NMp3ujF4/view?usp=drive_link)
-![Alt Text - BookShelf](https://drive.google.com/file/d/1oW_Oeiw3YTuYQWWliUK6OzSdv_EStTdJ/view?usp=drive_link)
-![Alt Text - Web Localstorage](https://drive.google.com/file/d/1BKA1tXCV_4Q1YVASntIx3NZKZ0We6TU7/view?usp=drive_link)
+![Alt Text - Adding to bookshelf](https://i.postimg.cc/0NgXjfrC/Added.png)
+![Alt Text - BookShelf](https://i.postimg.cc/13FMkqMV/bookshelf.png)
+![Alt Text - Web Localstorage](https://i.postimg.cc/Ssx6x2Lr/localstorage.png)
 
 
 
