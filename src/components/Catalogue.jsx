@@ -3,6 +3,8 @@ import BookCard from './BookCard.jsx';
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom'
 import axios from 'axios';
+import {PacmanLoader} from 'react-spinners'
+
 
 function Catalogue() {
 
@@ -56,15 +58,17 @@ function Catalogue() {
                     </NavLink>
                 </div>
             </div>
-            <div className='flex flex-wrap gap-3 mt-12'>
+            <div className='flex flex-wrap gap-[3vw] md:gap-3 mt-12'>
                 {loading ? (
-                    <h1>Loading...</h1>
+                    <div className='w-full flex mt-[10vw] justify-center'>
+                    <PacmanLoader  color="#4CAF50" />
+                  </div>
                 ) : error ? (
                     <h1>Something went wrong</h1>
                 ) : (
                     books
                         .filter
-                        ((book) => (search.toLowerCase() === '' ? book : book.title.toLowerCase().includes(search)))
+                        ((book) => (search.toLowerCase() === '' ? book : book.title.toLowerCase().includes(search.toLowerCase())))
                         .map((item) => (<BookCard key={item.key} book={item} />))
                 )
             }
