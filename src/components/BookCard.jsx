@@ -10,11 +10,11 @@ function BookCard({book,addVal,setBooks}) {
         add(book)
     }
   return (
-    <div className='flex flex-col shadow-md h-40 w-[30%] items-center justify-center '>
+    <div className='flex flex-col border shadow-md p-2 h-40 w-[30%] items-center justify-center '>
       <p className='text-sm md:text-2xl font-bold '> {book.title}</p>
-      <p className='text-gray-700 mb-5'>Edition count: {book.edition_count}</p>
+      <p className='text-gray-700 text-sm md:text-xl mb-5'>Edition count: {book.edition_count}</p>
       <button 
-      className={`${added? "bg-white text-green-500":"bg-green-500 text-white"} text-sm md:text-md font-semibold rounded-md md:py-1 md:px-2`}
+      className={`${added? "bg-white text-green-500":"bg-green-500 p-1 text-white"} text-sm md:text-md font-semibold rounded-md md:py-1 md:px-2`}
       onClick={handleClick}
       disabled={added || addVal}
       >
